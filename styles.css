@@ -1,0 +1,110 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(13, 78, 93, 0.838);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.796);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #ff6f61;
+}
+
+header p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e6554f;
+}
+
+#movie-info {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1em;
+}
+
+.movie-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.movie-details {
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #ff6f61;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #ccc;
+}
